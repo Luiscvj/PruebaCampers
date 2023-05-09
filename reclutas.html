@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/boostrap/bootstrap.min.css">
+    <script src="/js/jquery-3.6.4.min.js" defer > </script>
+    <script src="/js/boostrap/bootstrap.min.js" defer> </script>
+    <script src="/js/app/controllers/recluta-controller.js" type="module" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img width="30px" src="/img/astro.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="reclutas.html">Reclutas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="modulos.html">Modulos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notas.html">Notas</a>
+                </li>
+                
+                </ul>
+            </div>
+            </div>
+      </nav>
+
+    </header>
+    <main>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" data-ocultar='[["#registroRecluta"],["#filtroRecluta","#listarRecluta"]]' href="#">Registrar </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-ocultar='[["#listarRecluta","#filtroRecluta"],["#registroRecluta"]]'  href="#">Listar</a>
+            </li>
+          </ul>
+
+
+          <div id="registroRecluta"> 
+            <form class="row g-3" id="frmRegistroRecluta">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Nombre</label>
+                  <input type="text" name="nombre"  class="form-control" id="nombre">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">email</label>
+                  <input type="email" name="email" class="form-control" id="email">
+                </div>
+                <div class="col-4">
+                  <label for="inputAddress" class="form-label">Edad</label>
+                  <input type="text" name="edad" class="form-control" id="edad" placeholder="1234 Main St">
+                </div>
+                <div class="col-4">
+                  <label for="inputAddress2" class="form-label">Fecha de nacimiento</label>
+                  <input type="date" name="fechaNacimiento" class="form-control" id="fechaNacimiento" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputCity" class="form-label">Direccion</label>
+                  <input type="text" name="direccion" class="form-control" id="direccion">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCity" class="form-label">Telefono</label>
+                    <input type="text" name="telefono" class="form-control" id="telefono">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCity" class="form-label">Numero de identificacion</label>
+                    <input type="text" name="nroId" class="form-control" id="nroId">
+                </div>
+                <div class="col-4">
+                    <label for="inputAddress2" class="form-label">Fecha Ingreso</label>
+                    <input type="date" name="fechaIngreso" class="form-control" id="fechaIngreso" placeholder="Apartment, studio, or floor">
+                  </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label"></label>
+                  <select id="id_team" name="id_team" class="form-select">
+                    <option selected>Team...</option>
+                    <option value="1">Apolo</option>
+                    <option value="2">Artemis</option>
+                    <option value="3">Sputnik</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <button type="submit" data-accion="POST"  id="btnRecluta" class="btn btn-primary">Registrar</button>
+                </div>
+              </form>
+
+
+          </div>
+          <div class="list-group" id="filtroRecluta" style="display: none;">
+               <h3>Filtrar por:</h3>
+            <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="edadRadio">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Menores de edad
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="antiguedadRadio">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    2 meses de antiguedad
+                  </label>
+                </div>
+                <div class="form-check col-4">
+                  <label for="inputState" class="form-label"></label>
+                  <select id="team" name="team" class="form-select">
+                    <option selected>Team...</option>
+                    <option value="1">Apolo</option>
+                    <option value="2">Artemis</option>
+                    <option value="3">Sputnik</option>
+                  </select>
+                    
+                  </label>
+                </div>
+          </div>
+
+          <div id="listarRecluta" class="row" style="display: none;">
+          
+
+                          
+          </div>
+
+       
+
+
+
+        
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+{
+  "reclutas": [
+    {
+      "nombre": "Luis CArlos Villan",
+      "email": "lUISOS@GMAIL",
+      "edad": "15",
+      "fechaNacimiento": "2023-05-24",
+      "direccion": "CRA 10 -82",
+      "telefono": "213213",
+      "nroId": "3213213",
+      "fechaIngreso": "2023-05-24",
+      "id_team": "1",
+      "id": 1
+    },
+    {
+      "nombre": "Juan",
+      "email": "juan@gmail",
+      "edad": "19",
+      "fechaNacimiento": "2023-05-25",
+      "direccion": "CRA 10 -82",
+      "telefono": "213213",
+      "nroId": "3213213",
+      "fechaIngreso": "2023-05-19",
+      "id_team": "3",
+      "id": 2
+    }
+  ],
+  "team": [
+    {
+      "id": 1,
+      "nombre": "Apolo",
+      "trainer": "Johlver"
+    },
+    {
+      "id": 2,
+      "nombre": "Artemis",
+      "trainer": "Mauricio"
+    },
+    {
+      "id": 3,
+      "nombre": "Sputnik",
+      "trainer": "Miguel"
+    }
+  ],
+  "modulos": [
+    {
+      "nombre": "Poo",
+      "id_skill": "1",
+      "id": 1
+    },
+    {
+      "nombre": "Juan",
+      "id_skill": "2",
+      "id": 2
+    }
+  ],
+  "skill": [
+    {
+      "id": 1,
+      "nombre": "Bases de la programacion"
+    },
+    {
+      "id": 2,
+      "nombre": "Bases de datos"
+    },
+    {
+      "id": 3,
+      "nombre": "Frameworks"
+    }
+  ],
+  "evalucion": [
+    {
+      "id_recluta": 1,
+      "id_modulo": 1,
+      "nota": 4.5
+    }
+  ]
+}
